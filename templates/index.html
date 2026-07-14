@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translate & Speak</title>
+    <!-- Google Fonts & FontAwesome for 3D-like modern icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -35,18 +36,18 @@
             padding: 20px;
         }
 
-        /* --- 3D MOBILE FRAME --- */
+        /* --- COMPACT 3D MOBILE FRAME --- */
         .phone-wrapper {
             position: relative;
-            width: 380px;
-            height: 780px;
+            width: 340px;
+            height: 620px;
             background: var(--phone-bg);
-            border-radius: 45px;
-            padding: 12px;
+            border-radius: 36px;
+            padding: 10px;
             box-shadow: 
-                0px 25px 50px -12px rgba(0, 0, 0, 0.7),
-                inset 0 4px 6px rgba(255, 255, 255, 0.15),
-                inset 0 -4px 6px rgba(0, 0, 0, 0.6);
+                0px 20px 40px -10px rgba(0, 0, 0, 0.7),
+                inset 0 3px 5px rgba(255, 255, 255, 0.15),
+                inset 0 -3px 5px rgba(0, 0, 0, 0.6);
             border: 4px solid #374151;
             display: flex;
             flex-direction: column;
@@ -59,9 +60,9 @@
             width: 100%;
             height: 100%;
             background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 100%);
-            border-radius: 35px;
+            border-radius: 28px;
             overflow-y: auto;
-            padding: 30px 20px;
+            padding: 24px 16px;
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
@@ -70,17 +71,17 @@
             width: 0px;
         }
 
-        /* Notch */
+        /* Compact Notch */
         .notch {
             position: absolute;
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 120px;
-            height: 25px;
+            width: 100px;
+            height: 20px;
             background: #000;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
             z-index: 10;
             display: flex;
             align-items: center;
@@ -89,8 +90,8 @@
         
         .notch::before {
             content: '';
-            width: 40px;
-            height: 4px;
+            width: 30px;
+            height: 3px;
             background: #222;
             border-radius: 10px;
         }
@@ -98,8 +99,8 @@
         /* --- APP CONTENT & UI --- */
         .app-header {
             text-align: center;
-            margin-top: 15px;
-            margin-bottom: 25px;
+            margin-top: 10px;
+            margin-bottom: 18px;
         }
 
         /* 3D Icon Styling */
@@ -107,28 +108,28 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            width: 70px;
-            height: 70px;
+            width: 55px;
+            height: 55px;
             background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
-            border-radius: 20px;
-            margin-bottom: 15px;
+            border-radius: 16px;
+            margin-bottom: 10px;
             box-shadow: 
-                0 10px 20px rgba(79, 70, 229, 0.4),
-                inset 0 4px 0 rgba(255, 255, 255, 0.3),
-                inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+                0 8px 16px rgba(79, 70, 229, 0.4),
+                inset 0 3px 0 rgba(255, 255, 255, 0.3),
+                inset 0 -3px 0 rgba(0, 0, 0, 0.2);
             transform: perspective(100px) rotateX(10deg);
             animation: float 4s ease-in-out infinite;
         }
 
         .icon-container i {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #fff;
-            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
         }
 
         h2 {
             color: #ffffff;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 700;
             letter-spacing: 0.5px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
@@ -138,25 +139,25 @@
         form {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
         }
 
         .input-group {
             position: relative;
             background: var(--glass);
             border: 1px solid var(--border-glass);
-            border-radius: 16px;
-            padding: 12px;
+            border-radius: 14px;
+            padding: 10px;
             backdrop-filter: blur(10px);
         }
 
         label {
             display: block;
             color: #9ca3af;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             font-weight: 600;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             letter-spacing: 0.5px;
         }
 
@@ -164,10 +165,10 @@
             width: 100%;
             background: rgba(0, 0, 0, 0.2);
             border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
+            border-radius: 8px;
             color: #fff;
-            padding: 10px;
-            font-size: 0.9rem;
+            padding: 8px 10px;
+            font-size: 0.85rem;
             outline: none;
             transition: all 0.3s ease;
             resize: none;
@@ -175,7 +176,7 @@
 
         textarea:focus, select:focus {
             border-color: var(--primary-light);
-            box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+            box-shadow: 0 0 8px rgba(99, 102, 241, 0.2);
         }
 
         select {
@@ -188,89 +189,86 @@
             position: relative;
             background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
             border: none;
-            border-radius: 16px;
-            padding: 14px;
+            border-radius: 14px;
+            padding: 12px;
             color: white;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             cursor: pointer;
             outline: none;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-            /* 3D shadows */
             box-shadow: 
-                0 6px 0 #1e1b4b,
-                0 12px 20px rgba(79, 70, 229, 0.35);
+                0 5px 0 #1e1b4b,
+                0 10px 16px rgba(79, 70, 229, 0.35);
             transform: translateY(-2px);
             transition: all 0.15s ease-out;
         }
 
         .btn-3d:hover {
             background: linear-gradient(135deg, #5a52e6 0%, #4338ca 100%);
-            transform: translateY(-4px);
+            transform: translateY(-3px);
             box-shadow: 
-                0 8px 0 #1e1b4b,
-                0 16px 24px rgba(79, 70, 229, 0.45);
+                0 6px 0 #1e1b4b,
+                0 12px 20px rgba(79, 70, 229, 0.45);
         }
 
         .btn-3d:active {
-            transform: translateY(4px);
+            transform: translateY(3px);
             box-shadow: 
                 0 2px 0 #1e1b4b,
-                0 4px 10px rgba(79, 70, 229, 0.25);
+                0 3px 8px rgba(79, 70, 229, 0.25);
         }
 
         /* --- OUTPUT SECTIONS --- */
         .output-card {
-            margin-top: 25px;
-            padding: 15px;
+            margin-top: 20px;
+            padding: 12px;
             background: rgba(16, 185, 129, 0.08);
             border: 1px solid rgba(16, 185, 129, 0.2);
-            border-radius: 18px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 14px;
+            box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.2);
             animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .output-card h3 {
             color: var(--accent);
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .output-text {
             color: #f3f4f6;
-            font-size: 0.95rem;
-            line-height: 1.5;
+            font-size: 0.85rem;
+            line-height: 1.4;
             background: rgba(0, 0, 0, 0.25);
-            padding: 12px;
-            border-radius: 12px;
-            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 12px;
         }
 
-        /* 3D-styled Custom Audio Control */
         audio {
             width: 100%;
-            border-radius: 12px;
-            filter: invert(90%) hue-rotate(120deg); /* Blends native audio element to match neon green styling */
+            border-radius: 10px;
+            filter: invert(90%) hue-rotate(120deg);
             opacity: 0.9;
         }
 
-        /* Keyframes */
         @keyframes float {
             0%, 100% { transform: perspective(100px) rotateX(10deg) translateY(0); }
-            50% { transform: perspective(100px) rotateX(10deg) translateY(-8px); }
+            50% { transform: perspective(100px) rotateX(10deg) translateY(-6px); }
         }
 
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(15px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
@@ -291,18 +289,18 @@
             <form method="POST">
                 <div class="input-group">
                     <label><i class="fa-solid fa-keyboard" style="margin-right: 4px;"></i> Enter text:</label>
-                    <textarea name="text" rows="3" placeholder="Type something cool here..." required></textarea>
+                    <textarea name="text" rows="3" placeholder="Type text here..." required></textarea>
                 </div>
 
                 <div class="input-group">
-                    <label><i class="fa-solid fa-globe" style="margin-right: 4px;"></i> Select target language:</label>
+                    <label><i class="fa-solid fa-globe" style="margin-right: 4px;"></i> Target language:</label>
                     <div style="position: relative; display: flex; align-items: center;">
                         <select name="target">
                             {% for code, name in languages.items() %}
                                 <option value="{{ code }}">{{ name }} ({{ code }})</option>
                             {% endfor %}
                         </select>
-                        <i class="fa-solid fa-chevron-down" style="position: absolute; right: 12px; color: #9ca3af; pointer-events: none;"></i>
+                        <i class="fa-solid fa-chevron-down" style="position: absolute; right: 10px; font-size: 0.8rem; color: #9ca3af; pointer-events: none;"></i>
                     </div>
                 </div>
 
@@ -311,6 +309,7 @@
                 </button>
             </form>
 
+            <!-- Rendered Output Cards -->
             {% if translated_text %}
                 <div class="output-card">
                     <h3><i class="fa-solid fa-language"></i> Translated Text</h3>
